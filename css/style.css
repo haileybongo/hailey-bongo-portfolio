@@ -102,21 +102,15 @@ h3 { font-size: var(--fs-h3) }
 
 /* header */
 
-nav { display: none; }
-
-.nav_container{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 5vw);
-
-}
 
 .nav_links{
     text-align: right;
-    padding: 10px
+    padding: 10px;
+    text-decoration: none;
 }
 
 .nav__link{
+    color: black;
      padding: 10px;
      text-decoration: none;
 }
