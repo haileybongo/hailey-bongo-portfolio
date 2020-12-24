@@ -367,5 +367,37 @@ h3 { font-size: var(--fs-h3) }
     margin: auto;
     text-align: center;
     padding-top: 2em;
+    font-family: Playfair;
+    font-size: var(--fw-reg);
+ }
+
+ .project_page {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 3;
+    grid-column-gap: 2em;
+    margin: auto;
+    width: 80%
+ }
+
+ .project_one {
+    grid-column: 1 / span 1; 
+    grid-row: 1 / span 1;
+    font-family: var(--ff-secondary);
+  
+ }
+
+ .project_two {
+    grid-column: 2 / span 1; 
+    grid-row: 1 / span 1;
+    font-family: var(--ff-secondary);
+  
+ }
+
+ .project_three {
+    grid-column: 3 / span 1; 
+    grid-row: 1 / span 1;
+    font-family: var(--ff-secondary);
+   
  }
 }
