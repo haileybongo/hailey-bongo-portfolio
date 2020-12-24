@@ -6,10 +6,15 @@
 
 /* Custom Properties*/
 
+@font-face{
+    font-family: 'Neuton';
+    src: url(Neuton-Regular.ttf)
+  
+  }
 
 :root {
-    --ff-primary: 'Playfair',  serif;
-    --ff-secondary: 'Quicksand', monospace;
+    --ff-primary: 'Neuton', serif;
+    --ff-secondary: 'Quicksand',  monospace;
     
     --fw-reg: 300;
     --fw-bold: 900;
@@ -368,7 +373,7 @@ h3 { font-size: var(--fs-h3) }
     text-align: center;
     padding-top: 2em;
     font-family: var(--ff-primary);
-    font-size: var(--fw-reg);
+    font-size: var(--fs-h3);
  }
 
  .project_page {
