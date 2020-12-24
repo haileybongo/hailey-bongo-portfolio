@@ -7,13 +7,13 @@
 /* Custom Properties*/
 
 @font-face{
-    font-family: 'YoungSerif';
-    src: url(youngserif-regular.otf)
+    font-family: 'Playfair';
+    src: url(PlayfairDisplay-ExtraBold.ttf);
   
   }
 
 :root {
-    --ff-primary: 'YoungSerif',  sans-serif;
+    --ff-primary: 'Playfair',  sans-serif;
     --ff-secondary: 'Quicksand', monospace;
     
     --fw-reg: 300;
@@ -83,6 +83,7 @@ h3 { font-size: var(--fs-h3) }
 .section__title {
     margin-bottom: .25em;
     text-align:left; 
+    
 }
 
 .section__title--intro {
@@ -107,6 +108,8 @@ h3 { font-size: var(--fs-h3) }
     text-align: right;
     padding: 10px;
     text-decoration: none;
+    padding-right: 200px;
+    font-family: var(--ff-secondary);
 }
 
 .nav__link{
@@ -115,7 +118,7 @@ h3 { font-size: var(--fs-h3) }
      text-decoration: none;
 }
 
-/*  Intro section  */
+/*  Home Page  */
 
 .intro {
     position: relative;
@@ -243,42 +246,8 @@ h3 { font-size: var(--fs-h3) }
     
 }
 
-.my-services {
-    padding-top: 120px;
-    text-align: center;
-}
 
-.section__title--services {
-    position: relative;
-}
-
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-.service {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    
-    .service + .service {
-        margin-left: 2em;
-    }
-}
-
+/* About page */
 
 
 .about-me {
@@ -316,11 +285,13 @@ h3 { font-size: var(--fs-h3) }
 
     .about-me__body{
         grid-column: 2 / span 1; 
-
+        font-family: var(--ff-secondary);
     }
 
     
 }
+
+/* Contact links */
 
 .contacts {
     color: black;
@@ -336,11 +307,7 @@ h3 { font-size: var(--fs-h3) }
     opacity: .3;
 }
 
-.footer__link {
-    font-weight: var(--fw-bold);
-}
 
-.footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
 }
@@ -363,4 +330,40 @@ h3 { font-size: var(--fs-h3) }
 
 .social-list__link {
     padding: .5em;
+}
+
+
+/* Project Page */
+
+@media (min-width: 600px) {
+
+.project {
+    display: grid;
+    grid-template-rows: 2;
+    grid-column-gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+}
+
+.project_top {
+    grid-column: 1 / span 1; 
+    grid-row: 1 / span 1;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    font-family: var(--ff-secondary);
+}
+
+.project_bottom{
+    grid-column: 1 / span 1; 
+    grid-row: 2 / span 1;
+    margin: 0 auto;
+}
+
+.section__title--projects {
+    margin: auto;
+    text-align: center;
+    padding-top: 2em;
+ }
 }
