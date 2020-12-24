@@ -260,6 +260,7 @@ h3 { font-size: var(--fs-h3) }
 .about-me {
     max-width: 1000px;
     margin: auto; 
+    padding: 30px;
 }
 
 .about-me__img {
