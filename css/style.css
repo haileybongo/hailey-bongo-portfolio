@@ -279,6 +279,7 @@ h3 { font-size: var(--fs-h3) }
     .section__title--about {
        margin: auto;
        text-align: center;
+       padding: 30px;
     }
     
     
