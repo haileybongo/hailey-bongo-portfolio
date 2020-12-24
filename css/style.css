@@ -6,14 +6,9 @@
 
 /* Custom Properties*/
 
-@font-face{
-    font-family: 'Playfair';
-    src: url(PlayfairDisplay-ExtraBold.ttf);
-  
-  }
 
 :root {
-    --ff-primary: 'Playfair',  sans-serif;
+    --ff-primary: 'Playfair',  serif;
     --ff-secondary: 'Quicksand', monospace;
     
     --fw-reg: 300;
