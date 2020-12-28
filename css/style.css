@@ -112,6 +112,7 @@ h3 { font-size: var(--fs-h3) }
     padding-right: 2em;
     font-family: var(--ff-secondary);
     width: 100%;
+    margin-bottom: 1em;
 }
 
 .nav__link{
