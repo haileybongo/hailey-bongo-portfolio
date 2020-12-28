@@ -83,8 +83,9 @@ h3 { font-size: var(--fs-h3) }
 .section__title {
     margin-bottom: .25em;
     text-align:left; 
-    
+
 }
+
 
 .section__title--intro {
     font-weight: var(--fw-reg);
@@ -376,6 +377,7 @@ h3 { font-size: var(--fs-h3) }
     padding-top: 2em;
     font-family: var(--ff-primary);
     font-size: var(--fs-h3);
+    text-decoration: none;
  }
 
  .project_page {
